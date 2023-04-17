@@ -1,6 +1,7 @@
 package ch09;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class _04_ArrayList {
     public static void main(String[] args){
@@ -38,5 +39,10 @@ public class _04_ArrayList {
         list.add("하하");
         list.add("정형돈");
         list.add("정준하");
+
+        Collections.sort(list);
+        for(String s : list){
+            System.out.println(s);
+        }
     }
 }
